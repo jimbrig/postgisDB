@@ -1,0 +1,22 @@
+dbtGIS:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: docker.host.internal
+      port: 5433
+      user: postgres
+      pass: mysecretpassword
+      dbname: postgres
+      schema: postgres
+      threads: 1
+
+    # prod:
+    #   type: postgres
+    #   threads: [1 or more]
+    #   host: [host]
+    #   port: [port]
+    #   user: [prod_username]
+    #   pass: [prod_password]
+    #   dbname: [dbname]
+    #   schema: [prod_schema]
